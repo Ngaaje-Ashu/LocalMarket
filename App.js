@@ -9,6 +9,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Shops from './screens/Shops';
 import Homescreen from './screens/Homescreen';
 import ProductsDetails from './Components/ProductsDetails';
+import add_product from './screens/add_product';
+import product_image from './screens/product_image';
 
 
 
@@ -25,6 +27,8 @@ export default function App() {
         <Stack.Screen component={Login} name="Login" options={{headerShown:false}}/>
         <Stack.Screen component={Homescreen} name="Homescreen" options={{headerShown:false}}/>
         <Stack.Screen component={ProductsDetails} name="ProductsDetails" options={{headerShown:false}}/>
+        <Stack.Screen component={add_product} name="add_product" options={{headerShown:false}}/>
+        <Stack.Screen component={product_image} name="product_image" options={{headerShown:false}}/>
 
 
       </Stack.Navigator>
