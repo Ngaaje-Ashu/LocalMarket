@@ -46,4 +46,4 @@ export default function product_image() {
     
 
   
-//export default Create
+export default product_image
