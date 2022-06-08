@@ -2,21 +2,21 @@ const categories = [
     {
         id: 1,
         img: require('../assets/images/call-center.png'),
-        heading: 'Service',
+        heading: 'Shoe',
         paragraph: 'Lorem Ipsum is simply dummy text',
         backgroundColor: '#F6AFB0',
     },
     {
         id: 2,
         img: require('../assets/images/lightning.png'),
-        heading: 'Electricity',
+        heading: 'Electronics',
         paragraph: 'Lorem Ipsum is simply dummy text',
         backgroundColor: '#8ECC81',
     },
     {
         id: 3,
         img: require('../assets/images/piggy-bank.png'),
-        heading: 'Savings',
+        heading: 'Dresses',
         paragraph: 'Lorem Ipsum is simply dummy text',
         backgroundColor: '#80CEEE',
     }
@@ -108,8 +108,30 @@ const Sliderdata= [
   ];
 
 
-  const Detailsdata=[{
-      img:require('../assets/images/plant1.png')
-  }]
+  const Productdata=[{
+         id:1,
+         name:'ps4',
+         img:require('../assets/images/ps4.jpg'),
+         price:100,
+        },
+     {  
+         id:2,
+        name:'xbox',
+        img:require('../assets/images/xbox.jpg'),
+        price:100
+    },
 
-export {categories, transactions, transfer, cards ,Sliderdata ,Detailsdata}
+        {
+       id:3,
+       name:'ps5',
+       img:require('../assets/images/ps5.jpg'),
+       price:100
+
+
+        }
+    
+    
+    
+    ]
+
+export {categories, transactions, transfer, cards ,Sliderdata ,Productdata }

@@ -34,7 +34,7 @@ const Homescreen = ({navigation}) => {
         <View style={styles.horizontalPaddingView}>
       <Greeter user={{
                     img: 'https://yt3.ggpht.com/ytc/AKedOLTkTJuNwAOnHrFVGRLwbncwovkgiqXjD2ceQYuKDA=s900-c-k-c0x00ffffff-no-rj',
-                    name: 'Jos'
+                    name: 'Jose'
                     }}/>
                     <Spacer height={20}/>
                     
@@ -50,7 +50,7 @@ const Homescreen = ({navigation}) => {
                 data={categories}
                 showsHorizontalScrollIndicator={false}
                 keyExtractor={(item) => item.id}
-                renderItem={({ item }) => <Category category={item} onPress={() =>navigation.navigate('ProductsDetails')}  />}
+                renderItem={({ item }) => <Category category={item} onPress={() =>navigation.navigate('Cart')}  />}
             />
         </View>
         <View style={Sliderstyles.slider}>
@@ -77,7 +77,7 @@ const Homescreen = ({navigation}) => {
         {/* New Products */}
         
      <View style={styles.horizontalPaddingView}>
-        <Text style={values.h2Style}>New Products</Text>
+        <Text style={values.h2Style}>Shops</Text>
                      <Spacer height={20} />
                     </View>
                     
@@ -87,7 +87,7 @@ const Homescreen = ({navigation}) => {
                 data={categories}
                 showsHorizontalScrollIndicator={false}
                 keyExtractor={(item) => item.id}
-                renderItem={({ item }) => <Category category={item} onPress={(val) => console.warn(`Clicked ${val}`)} />}
+                renderItem={({ item }) => <Category category={item} onPress={() =>navigation.navigate('Shops')} />}
             />
         </View>
 
