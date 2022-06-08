@@ -31,6 +31,7 @@ export default function App() {
         <Stack.Screen component={add_product} name="add_product" options={{headerShown:false}}/>
         <Stack.Screen component={product_image} name="product_image" options={{headerShown:false}}/>
         <Stack.Screen component={Cart} name="Cart" options={{headerShown:false}}/>
+        <Stack.Screen component={Cart} name="Cart" />
 
 
       </Stack.Navigator>
